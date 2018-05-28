@@ -1,13 +1,32 @@
-{% extends 'blog/base.html' %}
+{% extends 'blog/page.html' %}
 
 {% block content %}
-    <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+
+     <article class="single">
+              <div class="row">
+
+                <div class="span8">
+                  <div class="post-image">
+                    <div class="post-heading">
+                      <h3>{{ post.title }}</h3>
+                    </div>
+                    {% if post.imageUrl != '' %}
+                    <img src="{{ post.imageUrl }}" alt="" />
+                    {% endif %}
+                  </div>
+                  <div class="meta-post">
+                    <ul>
+                      <li><i class="icon-file"></i></li>
+                      <li>By <a href="#" class="author">{{ post.author }}</a></li>
+                      <li>On <a href="#" class="date">{{ post.published_date }}</a></li>
+                      <li>Tags: <a href="#">{{ post.category }}</a>, <a href="#">Blog</a></li>
+                    </ul>
+                  </div>
+                  <p>
+                   {{ post.text }}
+                  </p>
+
+                </div>
+              </div>
+            </article>
 {% endblock %}

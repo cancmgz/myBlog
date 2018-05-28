@@ -48,7 +48,13 @@ class Page(models.Model):
 
 class Setting(models.Model):
     title = models.CharField(max_length=200)
-    logo = models.CharField(max_length=200)
+    logo = models.CharField(max_length=200, null=True)
+    fbUrl = models.CharField(max_length=20, null=True)
+    twUrl = models.CharField(max_length=20, null=True)
+    liUrl = models.CharField(max_length=30, null=True)
+    inUrl = models.CharField(max_length=20, null=True)
+    gitUrl = models.CharField(max_length=20, null=True)
+    updateDate = models.DateTimeField(default=timezone.now)
 
     def publish(self):
         self.save()
@@ -67,7 +73,7 @@ class Photo(models.Model):
     lens = models.CharField(max_length=100, null=True)
     mode = models.CharField(max_length=10, null=True)
     model = models.CharField(max_length=100, null=True)
-    shootDate = models.DateTimeField(default=timezone.now,null=True)
+    shootDate = models.DateTimeField(default=timezone.now, null=True)
     distance = models.CharField(max_length=10, null=True)
     category = models.ForeignKey('PhotoCategory', on_delete=models.CASCADE)
     photoUrl = models.CharField(max_length=200)
@@ -100,11 +106,3 @@ class Tag(models.Model):
     def __str__(self):
         return self.name
 
-
-
-
-
-
-
-
-# Create your models here.
