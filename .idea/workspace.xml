@@ -2,183 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f2188-6960-4593-b32f-ba0966c494e8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/migrations/0005_auto_20180525_1932.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/color/blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/color/cocoa.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/color/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/color/green.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/color/yellow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/css/bootstrap-responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/css/camera.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/css/cslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/css/flexslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/css/font-awesome-ie7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/css/jquery.bxslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/css/overwrite.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/css/prettyPhoto.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/css/shortcodes.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/fonts/fontawesome/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/fonts/fontawesome/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/fonts/fontawesome/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/fonts/fontawesome/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/fonts/fontawesome/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/ico/apple-touch-icon-114-precomposed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/ico/apple-touch-icon-144-precomposed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/ico/apple-touch-icon-57-precomposed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/ico/apple-touch-icon-72-precomposed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/ico/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/bg_direction_nav.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/bodybg/bg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/bodybg/bg10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/bodybg/bg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/bodybg/bg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/bodybg/bg4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/bodybg/bg5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/bodybg/bg6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/bodybg/bg7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/bodybg/bg8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/bodybg/bg9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/camera/camera-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/camera/camera_skins.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/camera/patterns/_notes/dwsync.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/camera/patterns/overlay1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/camera/patterns/overlay10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/camera/patterns/overlay2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/camera/patterns/overlay3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/camera/patterns/overlay4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/camera/patterns/overlay5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/camera/patterns/overlay6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/camera/patterns/overlay7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/camera/patterns/overlay8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/camera/patterns/overlay9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/blog/img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/blog/img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/blog/img3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/blog/small/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/blog/small/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/blog/small/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/blog/thumbs/img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/blog/thumbs/img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/blog/thumbs/img3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/blog/thumbs/img4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/blog/thumbs/no-thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/blog/thumbs/quote-thumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/blog/thumbs/small1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/dummy-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/team/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/team/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/team/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/team/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/team/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/team/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/team/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/team/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/testimonial/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/testimonial/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/testimonial/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/testimonial/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/works/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/works/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/works/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/works/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/works/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/works/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/works/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/works/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/works/big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/dummies/works/detail/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/glyphicons-halflings-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/glyphicons-halflings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/lp/imac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/lp/screen-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/dark_rounded/btnNext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/dark_rounded/btnPrevious.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/dark_rounded/contentPattern.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/dark_rounded/default_thumbnail.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/dark_rounded/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/dark_rounded/sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/dark_square/btnNext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/dark_square/btnPrevious.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/dark_square/contentPattern.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/dark_square/default_thumbnail.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/dark_square/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/dark_square/sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/default/default_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/default/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/default/sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/default/sprite_next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/default/sprite_prev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/default/sprite_x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/default/sprite_y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/facebook/btnNext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/facebook/btnPrevious.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/facebook/contentPatternBottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/facebook/contentPatternLeft.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/facebook/contentPatternRight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/facebook/contentPatternTop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/facebook/default_thumbnail.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/facebook/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/facebook/sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/light_rounded/btnNext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/light_rounded/btnPrevious.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/light_rounded/default_thumbnail.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/light_rounded/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/light_rounded/sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/light_square/btnNext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/light_square/btnPrevious.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/light_square/default_thumbnail.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/light_square/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/prettyPhoto/light_square/sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/slides/camera/slide1/img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/slides/camera/slide1/screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/slides/camera/slide2/iMac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/slides/camera/slide2/img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/slides/camera/slide3/browsers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/slides/parallax/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/slides/parallax/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/slides/parallax/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/animate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/camera/camera.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/camera/setting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/google-code-prettify/prettify.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/google-code-prettify/prettify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/inview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/jquery.bxslider.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/jquery.cslider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/jquery.easing.1.3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/jquery.flexslider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/jquery.prettyPhoto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/modernizr.custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/portfolio/jquery.quicksand.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/portfolio/setting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/js/toucheffects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/photo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/scripts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artikcalis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artikcalis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/blog.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/post_list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -195,8 +21,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -204,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="735">
+              <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -216,32 +42,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post-left-sidebar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/İndirilenler/Eterna/post-left-sidebar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2430">
-              <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="75">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -252,8 +62,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="45" column="27" lean-forward="true" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+            <state relative-caret-position="300">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -273,8 +83,8 @@
       <file leaf-file-name="post_detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/blog/post_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="465">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -348,11 +158,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="463" />
-    <option name="y" value="-4" />
-    <option name="width" value="1209" />
-    <option name="height" value="1004" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="2560" />
+    <option name="height" value="1374" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -362,7 +171,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -401,6 +209,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -409,7 +218,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -484,56 +293,55 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="2560" height="1374" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32902583" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32902583" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29610655" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22540984" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16927224" />
-      <window_info anchor="right" id="R Packages" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23649178" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2247455" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17394757" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16927224" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16927224" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32902583" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29610655" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="R Packages" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.22540984" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32902583" />
     </layout-to-restore>
   </component>
@@ -799,13 +607,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/İndirilenler/Eterna/portfolio-3cols.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/İndirilenler/Eterna/portfolio-3cols.html" />
     <entry file="file://$PROJECT_DIR$/templates/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
@@ -827,17 +629,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/İndirilenler/Eterna/post-left-sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/İndirilenler/Eterna/post-left-sidebar.html" />
     <entry file="file://$PROJECT_DIR$/blog/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="75">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -846,8 +642,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="105">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -856,37 +652,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/blog/post_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="465">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="45" column="27" lean-forward="true" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+        <state relative-caret-position="300">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog/forms.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="735">
+          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
