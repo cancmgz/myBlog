@@ -1,7 +1,7 @@
 from django.utils import timezone
 from .models import Post,Category,Page,PhotoCategory,Photo,Setting,Tag,PostComment
 from django.shortcuts import render, get_object_or_404
-from .forms import PostCommentForm
+from blog import forms
 from django.shortcuts import redirect
 
 def post_list(request):
@@ -24,8 +24,7 @@ def post_detail(request, pk):
     pages = Page.objects.filter(isActive=1)
     settings = Setting.objects.filter()
     comments = PostComment.objects.filter(post=pk)
-    form = PostCommentForm
-    return render(request, 'blog/post_detail.html', {'post': post, 'pages': pages, 'settings': settings, 'comments': comments, 'form': form})
+    return render(request, 'blog/post_detail.html', {'post': post, 'pages': pages, 'settings': settings, 'comments': comments})
 
 def pageDetail(request, pk):
     page = get_object_or_404(Page, pk=pk)
@@ -42,18 +41,21 @@ def photo(request):
 
 def PostComments(request):
     if request.method == 'POST':
-        form = PostCommentForm(request.POST)
-        if form.is_valid():
-            comment = form.save(commit=False)
-            comment.fullname = request.fullname
-            comment.createdDate = timezone.now()
-            comment.isActive = 0
-            comment.isDelete = 0
-            comment.email = request.email
-            comment.post = request.pk
-            comment.comment = request.comment
-            comment.commentReply = request.commentReply
-            comment.save()
-            return redirect('post_detail', pk=comment.pk)
-        else:
-            form = PostCommentForm()
+        form = forms
+        fullname = request.POST['fullname']
+        createdDate = timezone.now()
+        email = request.POST['email']
+        post = request.POST['post']
+        comment = request.POST['comment']
+        userPostComment = PostComment()
+        userPostComment.fullname = fullname
+        userPostComment.createdDate = createdDate
+        userPostComment.isActive = 1
+        userPostComment.isDelete = 0
+        userPostComment.email = email
+        userPostComment.post =get_object_or_404(Post, pk=post)
+        PostComment.comment = comment
+        userPostComment.save()
+
+        return redirect('post_detail', pk=4)
+
