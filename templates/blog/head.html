@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{% block settingContent %} {{ settings.title }} {% endblock %}</title>
+    <title>{% block settingContent %} {{ setting.title }} {% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Yazılım uzmanı, amatör fotoğrafçı. Standart bir yaşam.  "/>
     <meta name="author" content="Can Camgöz"/>
@@ -67,6 +67,7 @@
                                             </li>
                                         {% endfor %}
                                     {% endblock %}
+                                <li><a href="/photo">Photos</a> </li>
                                 </ul>
                             </nav>
                         </div>

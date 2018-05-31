@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+
 class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
@@ -11,8 +12,8 @@ class Post(models.Model):
             default=timezone.now)
     published_date = models.DateTimeField(
             blank=True, null=True)
-    isActive = models.BooleanField(default=1)
-    isDelete = models.BooleanField(default=0)
+    isActive = models.BooleanField(default=True)
+    isDelete = models.BooleanField(default=False)
 
     def publish(self):
         self.published_date = timezone.now()
@@ -21,11 +22,28 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+class PostComment(models.Model):
+    fullname = models.CharField(max_length=200)
+    comment = models.CharField(max_length=1000)
+    createdDate = models.DateTimeField(default=timezone.now)
+    isActive = models.BooleanField(default=False)
+    isDelete = models.BooleanField(default=False)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    commentReply = models.ForeignKey('self', on_delete=models.CASCADE, default=0, null=True, blank=True)
+    email = models.EmailField()
+
+    def publish(self):
+        self.save()
+
+    def __str__(self):
+        return self.fullname
+
+
 class Category(models.Model):
     name = models.CharField(max_length=200)
     created_date = models.DateTimeField(default=timezone.now)
-    isActive = models.BooleanField(default=1)
-    isDelete = models.BooleanField(default=0)
+    isActive = models.BooleanField(default=True)
+    isDelete = models.BooleanField(default=False)
 
     def publish(self):
         self.save()

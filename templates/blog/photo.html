@@ -5,11 +5,10 @@
           <div class="span12">
             <div class="inner-heading">
               <ul class="breadcrumb">
-                <li><a href="index.html">Home</a> <i class="icon-angle-right"></i></li>
-                <li><a href="#">Portfolio</a> <i class="icon-angle-right"></i></li>
-                <li class="active">Portfolio 3 columns</li>
+                <li><a href="/home">Home</a> <i class="icon-angle-right"></i></li>
+                <li class="active">Photos</li>
               </ul>
-              <h2>Portfolio 3 columns</h2>
+              <h2>Photos</h2>
             </div>
           </div>
         </div>
@@ -22,9 +21,12 @@
           <div class="span12">
             <ul class="portfolio-categ filter">
               <li class="all active"><a href="#">All</a></li>
-              <li class="web"><a href="#" title="">Web design</a></li>
-              <li class="icon"><a href="#" title="">Icons</a></li>
-              <li class="graphic"><a href="#" title="">Graphic design</a></li>
+              {% block categoryList %}
+                  {% for category in categorys %}
+                    <li class="{{ category.name }}"><a href="#" title="{{ category.name }}">{{ category.name }}</a></li>
+                  {% endfor %}
+
+                {% endblock %}
             </ul>
 
             <div class="clearfix"></div>
@@ -33,16 +35,16 @@
                 <ul id="thumbs" class="grid cs-style-4 portfolio">
 
                   {% block PhotoList %}
-                    {% for photo in Photos %}
+                    {% for photo in photos %}
                      <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span4 design" data-id="id-0" data-type="web">
+                  <li class="item-thumbs span4 design" data-id="id-0" data-type="{{ photo.category }}">
                     <div class="item">
                       <figure>
                         <div><img src="{{ photo.photoUrl }}" alt="" /></div>
                         <figcaption>
                           <div>
                             <span>
-											<a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
+											<a href="{{ photo.photoUrl }}" data-pretty="prettyPhoto[gallery1]" title="{{ photo.title }}"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
 											</span>
                             <span>
 											<a href="#"><i class="icon-file icon-circled icon-bglight icon-2x"></i></a>
