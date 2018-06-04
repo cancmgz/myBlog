@@ -9,9 +9,9 @@ class Post(models.Model):
     imageUrl = models.ImageField
     category = models.ForeignKey('Category', default=0, on_delete=models.CASCADE)
     created_date = models.DateTimeField(
-            default=timezone.now)
+        default=timezone.now)
     published_date = models.DateTimeField(
-            blank=True, null=True)
+        blank=True, null=True)
     isActive = models.BooleanField(default=True)
     isDelete = models.BooleanField(default=False)
 
@@ -22,6 +22,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+
 class PostComment(models.Model):
     fullname = models.CharField(max_length=200)
     comment = models.CharField(max_length=1000)
@@ -29,7 +30,7 @@ class PostComment(models.Model):
     isActive = models.BooleanField(default=False)
     isDelete = models.BooleanField(default=False)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
-    commentReply = models.ForeignKey('self', on_delete=models.CASCADE, default=0, null=True, blank=True)
+    commentReply = models.ForeignKey('self', on_delete=models.CASCADE,  null=True, blank=True)
     email = models.EmailField()
 
     def publish(self):
@@ -51,6 +52,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+
 class Page(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()
@@ -63,6 +65,7 @@ class Page(models.Model):
 
     def __str__(self):
         return self.title
+
 
 class Setting(models.Model):
     title = models.CharField(max_length=200)
@@ -79,6 +82,7 @@ class Setting(models.Model):
 
     def __str__(self):
         return self.title
+
 
 class Photo(models.Model):
     title = models.CharField(max_length=200)
@@ -102,6 +106,7 @@ class Photo(models.Model):
     def __str__(self):
         return self.title
 
+
 class PhotoCategory(models.Model):
     name = models.CharField(max_length=50)
     createDate = models.DateTimeField(default=timezone.now)
@@ -114,6 +119,7 @@ class PhotoCategory(models.Model):
     def __str__(self):
         return self.name
 
+
 class Tag(models.Model):
     name = models.CharField(max_length=100)
     post = models.ForeignKey('Post', on_delete=models.CASCADE)
@@ -123,4 +129,3 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.name
-

@@ -3,29 +3,30 @@
         <div class="row">
           <div class="span4">
             <div class="widget">
-              <h5 class="widgetheading">Browse pages</h5>
+              <h5 class="widgetheading">Pages</h5>
               <ul class="link-list">
-                <li><a href="#">Our company</a></li>
-                <li><a href="#">Terms and conditions</a></li>
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Press release</a></li>
-                <li><a href="#">What we have done</a></li>
-                <li><a href="#">Our support forum</a></li>
+                <li><a href="/home/">Anasayfa</a></li>
+                <li><a href="/photo/">Photo</a></li>
+                {% block pageList %}
+                                        {% for p in pages %}
+                                            <li>
+                                                <a href="{% url 'pageDetail' pk=p.pk %}">{{ p.title }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    {% endblock %}
               </ul>
 
             </div>
           </div>
           <div class="span4">
             <div class="widget">
-              <h5 class="widgetheading">Get in touch</h5>
+              <h5 class="widgetheading">güzel blog.</h5>
               <address>
-							<strong>Eterna company Inc.</strong><br>
-							Somestreet 200 VW, Suite Village A.001<br>
-							Jakarta 13426 Indonesia
+							bir ben var ki benim içimde, <br>
+						    benden öte, benden ziyade.
 						</address>
               <p>
-                <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
-                <i class="icon-envelope-alt"></i> email@domainname.com
+                <i class="icon-envelope-alt"></i> cancmgz@gmail.com
               </p>
             </div>
           </div>
