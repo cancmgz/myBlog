@@ -1,9 +1,8 @@
 from django import forms
-from .models import PostComment
+from .models import PostComment,Post
 
 class PostCommentForm(forms.ModelForm):
 
     class Meta:
         model = PostComment
-        fields = ('fullname',  'email', 'comment', 'post')
-
+        fields = ('fullname',  'email', 'comment')

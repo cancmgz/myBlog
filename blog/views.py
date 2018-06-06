@@ -1,8 +1,8 @@
 from django.utils import timezone
-from .models import Post, Category, Page, PhotoCategory, Photo, Setting, Tag, PostComment
-from django.shortcuts import render, get_object_or_404
-from django.shortcuts import redirect
+from .models import Post, Category, Page, PhotoCategory, Photo, Setting, PostComment
+from django.shortcuts import render, get_object_or_404, redirect
 from .forms import PostCommentForm
+from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
 
 
 def post_list(request):
@@ -63,14 +63,23 @@ def photo(request):
                   {'photos': photos, 'categorys': categorys, 'pages': pages, 'settings': settings})
 
 
-def PostComments(request):
+def PostComments(request, pk):
     if request.method == "POST":
         form = PostCommentForm(request.POST)
-        if form.is_valid():
-            PostComments = form.save(commit=False)
-            PostComments.post = request.post
-            PostComments.isActive = 1
-            PostComments.isDelete = 0
-            PostComments.createdDate = timezone.now()
-            PostComments.save()
-            return redirect('post_detail', pk=PostComments.post.pk)
+    if form.is_valid():
+        PostComments = form.save(commit=False)
+        PostComments.isActive = 1
+        PostComments.isDelete = 0
+        PostComments.createdDate = timezone.now()
+        PostComments.post_id = pk
+        PostComments.save()
+        return redirect('post_detail', pk=pk)
+
+
+def Search(request):
+    searchField = request.GET.get('q')
+    posts = Post.objects.filter(title__contains=searchField)
+    categorys = Category.objects.filter(isActive=1, isDelete=0)
+    pages = Page.objects.filter(isDelete=0, isActive=1)
+    return render(request, 'blog/search.html',
+                      {'posts': posts, 'categorys': categorys, 'pages': pages})

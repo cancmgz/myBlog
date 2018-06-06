@@ -77,9 +77,9 @@
 
                                 </div>
                             </div>
-                            </div>
-                        {% endfor %}
 
+                        {% endfor %}
+</div>
                     {% endblock %}
 
                 <div class="marginbot30"></div>
@@ -87,7 +87,7 @@
 
                 {% block PostCommentForm %}
                     <h1>New post</h1>
-                    <form action="/addComment/" method="POST" class="post-form">
+                    <form action="/addComment/{{ post.pk }}/" method="POST" class="post-form">
 
                         {% csrf_token %}
 
