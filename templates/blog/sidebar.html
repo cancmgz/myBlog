@@ -35,12 +35,15 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="one">
                         <ul class="popular">
-                            <li>
-                                <img src="static/img/dummies/blog/small/1.jpg" alt=""
-                                     class="thumbnail pull-left"/>
-                                <p><a href="#">Dorlorem ipsum et mea dolor sit amet</a></p>
+                            {% for pop in populerPost %}
+                                <li>
+
+                                <p><a href="#">{{ pop.adet }}</a></p>
                                 <span>20 June, 2013</span>
                             </li>
+                            {% endfor %}
+
+
                             <li>
                                 <img src="static/img/dummies/blog/small/2.jpg" alt=""
                                      class="thumbnail pull-left"/>

@@ -2,7 +2,7 @@ from django.utils import timezone
 from .models import Post, Category, Page, PhotoCategory, Photo, Setting, PostComment
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import PostCommentForm
-from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
+from django.db.models import Count
 
 
 def post_list(request):
@@ -19,8 +19,10 @@ def index(request, pageNumber=0):
     categorys = Category.objects.filter(isActive=1).order_by('created_date')
     pages = Page.objects.filter(isActive=1)
     settings = Setting.objects.filter()
+    populerPost = PostComment.objects.filter().values('post').annotate(adet=Count('post')).order_by('-adet')[:5]
+
     return render(request, 'blog/index.html',
-                  {'posts': posts, 'categorys': categorys, 'pages': pages, 'settings': settings})
+                  {'posts': posts, 'categorys': categorys, 'pages': pages, 'settings': settings, 'populerPost': populerPost})
 
 
 def categoryDetail(request, pk, pageNumber=0):
