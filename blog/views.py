@@ -3,6 +3,7 @@ from .models import Post, Category, Page, PhotoCategory, Photo, Setting, PostCom
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import PostCommentForm
 from django.db.models import Count
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 def post_list(request):
@@ -10,12 +11,18 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 
-def index(request, pageNumber=0):
-    if not pageNumber:
-        pageNumber = 0
-    first = int(pageNumber) * 5
-    last = int(first) + 5
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')[first:last]
+def index(request):
+
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    page = request.GET.get('page', 1)
+    paginator = Paginator(posts, 5)
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        posts = paginator.page(1)
+    except EmptyPage:
+        posts = paginator.page(paginator.num_pages)
+
     categorys = Category.objects.filter(isActive=1).order_by('created_date')
     pages = Page.objects.filter(isActive=1)
     settings = Setting.objects.filter()

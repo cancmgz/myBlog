@@ -25,7 +25,7 @@ class Post(models.Model):
 
 class PostComment(models.Model):
     fullname = models.CharField(max_length=200)
-    comment = models.CharField(max_length=1000)
+    comment = models.TextField()
     createdDate = models.DateTimeField(default=timezone.now)
     isActive = models.BooleanField(default=False)
     isDelete = models.BooleanField(default=False)

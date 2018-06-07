@@ -29,15 +29,30 @@
             </div>
         </article>
     {% endfor %}
-    <div id="pagination">
-{% with posts.count 5 1  as name %}
-        <span class="all">Page 1 of {% widthratio posts.count 5 1 %} </span>
-        <span class="current">1<a href="/home/0/"></a></span>
-        {% for sayi in test %}
-        <a href="/home/{{ forloop.counter }}/" class="inactive">{{ forloop.counter|add:1 }}</a>
-        {% endfor %}
-    {% endwith %}
-    </div>
+
+
+
+    {% if posts.has_other_pages %}
+  <div id="pagination">
+    {% if posts.has_previous %}
+      <span><a href="?page={{ posts.previous_page_number }}">&laquo;</a></span>
+    {% else %}
+        <span class="disabled"><span>&laquo;</span></span>
+    {% endif %}
+    {% for i in posts.paginator.page_range %}
+      {% if posts.number == i %}
+        <span class="current">{{ i }} </span>
+      {% else %}
+        <span><a href="?page={{ i }}">{{ i }}</a></span>
+      {% endif %}
+    {% endfor %}
+    {% if posts.has_next %}
+      <span><a href="?page={{ posts.next_page_number }}">&raquo;</a></span>
+    {% else %}
+      <span class="disabled"><span>&raquo;</span></span>
+    {% endif %}
+  </div>
+{% endif %}
 {% endblock %}
 
 
