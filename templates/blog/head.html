@@ -3,13 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{% block settingContent %} {{ setting.title }} {% endblock %}</title>
+    <title>{% block settingContent %} {{ categoryDetails.name }} {{ post.title }} {{ category.name }} {{ page.title }} - {{ settings.title }} {% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Yazılım uzmanı, amatör fotoğrafçı. Standart bir yaşam.  "/>
     <meta name="author" content="Can Camgöz"/>
     {% include 'blog/scripts.html' %}
 </head>
-
 <body>
 
 <div id="wrapper">
@@ -25,18 +24,17 @@
                     <div class="span6">
 
                         <ul class="social-network">
-                            <li><a href="#" data-placement="bottom" title="Facebook"><i
+                            <li><a href="http://fb.com/{{ settings.fbUrl }}" target="_blank" data-placement="bottom" title="Facebook"><i
                                     class="icon-facebook icon-white"></i></a></li>
-                            <li><a href="#" data-placement="bottom" title="Twitter"><i
+                            <li><a href="https://www.twitter.com/{{ settings.twUrl }} " target="_blank" data-placement="bottom" title="Twitter"><i
                                     class="icon-twitter icon-white"></i></a></li>
-                            <li><a href="#" data-placement="bottom" title="Linkedin"><i
+                            <li><a href="https://linkedin.com/in/{{ settings.liUrl }} " target="_blank" data-placement="bottom" title="Linkedin"><i
                                     class="icon-linkedin icon-white"></i></a></li>
-                            <li><a href="#" data-placement="bottom" title="Pinterest"><i
-                                    class="icon-pinterest  icon-white"></i></a></li>
-                            <li><a href="#" data-placement="bottom" title="Google +"><i
-                                    class="icon-google-plus icon-white"></i></a></li>
-                            <li><a href="#" data-placement="bottom" title="Dribbble"><i
-                                    class="icon-dribbble icon-white"></i></a></li>
+                            <li><a href="https://instagram.com/{{ settings.inUrl }} " target="_blank" data-placement="bottom" title="Instagram"><i
+                                    class="icon-instagram  icon-white"></i></a></li>
+                            <li><a href="https://github.com/{{ settings.gitUrl }} " target="_blank" data-placement="bottom" title="Github"><i
+                                    class="icon-github icon-white"></i></a></li>
+
                         </ul>
 
                     </div>

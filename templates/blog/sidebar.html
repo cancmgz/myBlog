@@ -29,48 +29,26 @@
             <div class="tabs">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#one" data-toggle="tab"><i class="icon-star"></i>
-                        Popular</a></li>
-                    <li><a href="#two" data-toggle="tab">Recent</a></li>
+                        Popular Post</a></li>
+                    <li><a href="#two" data-toggle="tab">Recent Comment</a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="one">
                         <ul class="popular">
                             {% for pop in populerPost %}
                                 <li>
-
-                                <p><a href="#">{{ pop.adet }}</a></p>
-                                <span>20 June, 2013</span>
-                            </li>
+                                    <p><a href="{% url 'post_detail' pk=pop.post %}">{{ pop.post__title }}</a></p>
+                                </li>
                             {% endfor %}
-
-
-                            <li>
-                                <img src="static/img/dummies/blog/small/2.jpg" alt=""
-                                     class="thumbnail pull-left"/>
-                                <p><a href="#">Fierent adipisci iracundia est ei, usu timeam persius ea</a>
-                                </p>
-                                <span>20 June, 2013</span>
-                            </li>
-                            <li>
-                                <img src="static/img/dummies/blog/small/3.jpg" alt=""
-                                     class="thumbnail pull-left"/>
-                                <p><a href="#">Usu ea justo malis, pri quando everti electram ei</a></p>
-                                <span>20 June, 2013</span>
-                            </li>
                         </ul>
                     </div>
                     <div class="tab-pane" id="two">
-                        <ul class="recent">
-                            <li>
-                                <p><a href="#">Dorlorem ipsum et mea dolor sit amet</a></p>
-                            </li>
-                            <li>
-                                <p><a href="#">Fierent adipisci iracundia est ei, usu timeam persius ea</a>
-                                </p>
-                            </li>
-                            <li>
-                                <p><a href="#">Usu ea justo malis, pri quando everti electram ei</a></p>
-                            </li>
+                        <ul class="popular">
+                          {% for recent in lastPostComment %}
+                                <li>
+                                    <p><a href="{% url 'post_detail' pk=recent.post_id %}">{{ recent.post }}</a></p>
+                                </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>

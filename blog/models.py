@@ -99,6 +99,8 @@ class Photo(models.Model):
     distance = models.CharField(max_length=10, null=True)
     category = models.ForeignKey('PhotoCategory', on_delete=models.CASCADE)
     photoUrl = models.CharField(max_length=200)
+    isActive = models.BooleanField(default=True)
+    isDelete = models.BooleanField(default=False)
 
     def publish(self):
         self.save()

@@ -1,0 +1,35 @@
+{% include 'blog/head.html' %}
+<section id="inner-headline">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="inner-heading">
+                    <ul class="breadcrumb">
+                        <li><a href="/home/">Home</a> <i class="icon-angle-right"></i></li>
+                        <li class="active">{{ categoryDetails.name }}</li>
+                    </ul>
+                    <h2>{{ categoryDetails.name }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="content">
+    <div class="container">
+        <div class="row">
+
+            <div class="span8">
+
+                {% include 'blog/post_list.html' %}
+
+
+            </div>
+
+            {% include 'blog/sidebar.html' %}
+
+        </div>
+    </div>
+</section>
+
+{% include 'blog/footer.html' %}

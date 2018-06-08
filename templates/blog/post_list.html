@@ -23,7 +23,7 @@
                         <p>
                                   {{ post.text|safe|truncatewords:"50"|linebreaks }}...
                         </p>
-                        <a href="#" class="readmore">Read more <i class="icon-angle-right"></i></a>
+                        <a href="{% url 'post_detail' pk=post.pk %}" class="readmore">Read more <i class="icon-angle-right"></i></a>
                     </div>
                 </div>
             </div>

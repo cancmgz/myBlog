@@ -47,7 +47,7 @@
                                 </ul>
                             </div>
                             <p>
-                                {{ post.text }}
+                                {{ post.text|linebreaks }}
                             </p>
 
 
@@ -82,7 +82,7 @@
 </div>
                     {% endblock %}
 
-                <div class="marginbot30"></div>
+                <div class="marginbot"></div>
                 <h4>Leave your comment</h4>
 
                 {% block PostCommentForm %}
